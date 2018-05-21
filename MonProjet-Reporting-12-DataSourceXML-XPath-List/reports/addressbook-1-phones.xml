@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addressbook>
+
+	<lastupdate>2017-10-31</lastupdate>
+	<person>
+		<name>BOUZID Mohamed</name>
+		<phone type="mobile">+1 (415) 111-1111</phone>
+		<phone type="home">+1 (415) 111-1112</phone>
+		<phone type="work">+1 (415) 111-1113</phone>
+		<phone type="fax">+1 (415) 111-1114</phone>
+	</person>
+	<person>
+		<name>ROMDHANI Mohamed</name>
+		<phone type="mobile">+1 (415) 222-2222</phone>
+		<phone type="home">+1 (415) 222-2223</phone>
+	</person>
+	<person>
+		<name>DANCIU Teodor</name>
+		<phone type="work">+1 (415) 333-3333</phone>
+		<phone type="mobile">+1 (415) 333-3334</phone>
+	</person>
+</addressbook>

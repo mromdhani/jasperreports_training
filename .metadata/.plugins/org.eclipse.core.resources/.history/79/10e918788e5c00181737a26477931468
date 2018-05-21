@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addressbook>
+
+	<lastupdate>2009-10-31</lastupdate>
+	<person>
+		<name>ETHAN</name>
+		<phone type="mobile">+1 (415) 111-1111</phone>
+		<phone type="home">+1 (415) 111-1112</phone>
+		<phone type="work">+1 (415) 111-1113</phone>
+		<phone type="fax">+1 (415) 111-1114</phone>
+	</person>
+	<person>
+		<name>CALEB</name>
+		<phone type="mobile">+1 (415) 222-2222</phone>
+		<phone type="home">+1 (415) 222-2223</phone>
+	</person>
+	<person>
+		<name>WILLIAM</name>
+		<phone type="work">+1 (415) 333-3333</phone>
+		<phone type="mobile">+1 (415) 333-3334</phone>
+	</person>
+</addressbook>

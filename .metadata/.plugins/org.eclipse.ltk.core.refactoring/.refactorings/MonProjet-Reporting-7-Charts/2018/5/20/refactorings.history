@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MonProjet-Reporting-7-Charts/reports/report-sampledb-master.jrxml&apos; to &apos;report-sampledb-master-chart.jrxml&apos;" description="Rename resource &apos;report-sampledb-master.jrxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="reports/report-sampledb-master.jrxml" name="report-sampledb-master-chart.jrxml" stamp="1526640683124" updateReferences="true"/>
+</session>

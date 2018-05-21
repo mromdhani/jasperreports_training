@@ -1,0 +1,30 @@
+<courses>
+   <category name="ejb">
+      <doc id="1">                                                           
+          <title>Introduction a EJB 3.0</title>
+          <author>Juan Alonso</author>
+      </doc>
+      <doc id="2">                                                           
+          <title>EJB 3.0 In action</title>
+          <author>Juan Alonso</author>
+      </doc>
+      <doc id="3">                                                           
+          <title> EJB with JBOSS</title>
+          <author>Francisco Javier</author>
+      </doc>
+    </category>
+   <category name="jsf">
+      <doc id="4">                                                           
+          <title>JSF Reference Guide</title>
+          <author>Ivan Zaera</author>
+      </doc>
+      <doc id="5">                                                           
+          <title>Introduction to Ajax4jsf</title>
+          <author>Juan Alonso</author>
+      </doc>
+      <doc id="6">                                                           
+          <title>Jsf comapred with Struts</title>
+          <author>Alejandro Perez</author>
+      </doc>
+    </category>
+</courses>

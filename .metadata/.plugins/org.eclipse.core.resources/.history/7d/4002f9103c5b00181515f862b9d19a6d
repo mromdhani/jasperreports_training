@@ -1,0 +1,33 @@
+package com.neoxam.client;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperRunManager;
+import net.sf.jasperreports.engine.data.JRXmlDataSource;
+
+public class Report_From_XML {
+	
+	public static void main(String[] args) {		
+		
+		try {
+			
+			// Compilation du JRXML et Production du template	
+			String filePath="D:\\workspace_formation_jasper\\MonProjet-Reporting-11-DataSourceXML\\reports\\AircraftData.xml";
+			 InputStream inputStream = new FileInputStream(new File(filePath));
+			JRXmlDataSource xmlDataSource = new JRXmlDataSource(inputStream,"/AircraftData/aircraft");
+
+			// Export du PDF
+			JasperRunManager.runReportToPdfFile("reports/report-xml-with-description.jasper", 
+					"reports/report-xml-with-description.pdf", null, xmlDataSource);
+			
+		} catch (JRException | FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Fin de la génération");
+	}
+}

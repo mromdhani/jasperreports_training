@@ -1,0 +1,9 @@
+package com.neoxam.entities;
+
+public class Compte {
+	
+	private String numero;
+	private String proprietaire;
+	private double 
+
+}

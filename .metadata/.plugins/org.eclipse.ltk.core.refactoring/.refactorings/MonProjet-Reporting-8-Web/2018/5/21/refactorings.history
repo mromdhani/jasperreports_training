@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;MonProjet-Reporting-8-Web&apos;&#x0D;&#x0A;- Original project: &apos;MonProjet-Reporting-8-Web&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     first-report.jasper&#x0D;&#x0A;     first-report.jrprint" description="Delete elements" element1="src/main/webapp/reports/first-report.jrprint" element2="src/main/webapp/reports/first-report.jasper" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1526881763803" subPackages="false" version="1.0"/>
+</session>

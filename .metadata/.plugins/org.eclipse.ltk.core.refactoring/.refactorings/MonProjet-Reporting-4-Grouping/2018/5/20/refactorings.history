@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MonProjet-Reporting-4-Grouping/reports/report-0-sampledb.jrxml&apos; to &apos;report-0-sampledb-grouped.jrxml&apos;" description="Rename resource &apos;report-0-sampledb.jrxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="reports/report-0-sampledb.jrxml" name="report-0-sampledb-grouped.jrxml" stamp="1526634575166" updateReferences="true"/>
+</session>

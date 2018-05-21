@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="myOrderReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2c0fc08-cb4f-4d64-8686-2e9e1c845f04">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="XML DataSource on Northwind.xml"/>
+	<parameter name="CustomerID" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA["/Northwind/Orders[CustomerID='"+$P{CustomerID}+"']"]]>
+	</queryString>
+	<field name="OrderID" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="OrderID"/>
+		<fieldDescription><![CDATA[OrderID]]></fieldDescription>
+	</field>
+	<field name="EmployeeID" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="EmployeeID"/>
+		<fieldDescription><![CDATA[EmployeeID]]></fieldDescription>
+	</field>
+	<field name="ShipCity" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="ShipCity"/>
+		<fieldDescription><![CDATA[ShipCity]]></fieldDescription>
+	</field>
+	<field name="ShipCountry" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="ShipCountry"/>
+		<fieldDescription><![CDATA[ShipCountry]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="30" uuid="8ee14bd1-2c94-4c9d-8a9a-5759ff4aa500">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e130f49-a3dc-4239-b848-2ed9aa313ca4"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[OrderID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" uuid="90c103a4-e18f-477c-98ea-e4a2c1b0395b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4ec57de9-4b14-40fc-8206-b5250fe53013"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EmployeeID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" uuid="390f7613-a872-4316-be5a-cc23f48b7cb0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3cd8887-083f-41ef-ac64-0631f200cf19"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ShipCity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" uuid="bcf0a385-d904-41b2-807c-0cb0114060d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9fc24a90-5848-4060-917a-256946a2e65b"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ShipCountry]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="1b059e98-ca1e-4dd4-9d0f-cf87a00071d8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e130f49-a3dc-4239-b848-2ed9aa313ca4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{OrderID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="30" uuid="16c2f970-1c81-437c-a1ee-b18d214d50e3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4ec57de9-4b14-40fc-8206-b5250fe53013"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{EmployeeID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="30" uuid="135326e1-e309-4e33-bff2-2ad9a62fa782">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3cd8887-083f-41ef-ac64-0631f200cf19"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ShipCity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="589c6a2b-8ce2-46e1-aba3-451f79dd505c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9fc24a90-5848-4060-917a-256946a2e65b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ShipCountry}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

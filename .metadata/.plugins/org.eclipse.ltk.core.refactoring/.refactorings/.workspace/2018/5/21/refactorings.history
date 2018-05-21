@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;MonProjet-Reporting-13-DataSourceXML-XPath-SubReport&apos;" deleteContents="true" description="Delete resource &apos;MonProjet-Reporting-13-DataSourceXML-XPath-SubReport&apos;" element1="/MonProjet-Reporting-13-DataSourceXML-XPath-SubReport" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1526880945803"/>
+</session>

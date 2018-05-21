@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report-banque-hibernate" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eeb7f5fe-9443-4611-b10a-6bb4f99417f7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Hibernate on BanqueDB Data Adapter "/>
+	<queryString language="HQL">
+		<![CDATA[From Compte ]]>
+	</queryString>
+	<field name="numero" class="java.lang.String">
+		<property name="net.sf.jasperreports.javabean.field.property" value="numero"/>
+	</field>
+	<field name="proprietaire" class="java.lang.String">
+		<property name="net.sf.jasperreports.javabean.field.property" value="proprietaire"/>
+	</field>
+	<field name="solde" class="java.lang.Double">
+		<property name="net.sf.jasperreports.javabean.field.property" value="solde"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="30" uuid="68818e37-ab35-42ff-a899-7271c2aabf29">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a99d2800-400f-4638-80df-99af3c50efa1"/>
+				</reportElement>
+				<text><![CDATA[numero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="30" uuid="f9b2dcc9-f4cb-4efb-9bab-f9a02bf3fa3a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef2475ae-daba-4575-8e43-733a2351ab85"/>
+				</reportElement>
+				<text><![CDATA[proprietaire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="30" uuid="3e701ef1-a498-4c3e-a141-0eb0532def66">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d1a87ca-a415-4a62-b877-70bb256c4396"/>
+				</reportElement>
+				<text><![CDATA[solde]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="30" uuid="0a21f061-c90d-4314-b9c6-4884bc23f4be">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a99d2800-400f-4638-80df-99af3c50efa1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{numero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="30" uuid="607e0070-037a-4830-afc2-c751642c803b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ef2475ae-daba-4575-8e43-733a2351ab85"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{proprietaire}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="2d7c7e17-4624-4c79-9516-16f47dd78452">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d1a87ca-a415-4a62-b877-70bb256c4396"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{solde}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

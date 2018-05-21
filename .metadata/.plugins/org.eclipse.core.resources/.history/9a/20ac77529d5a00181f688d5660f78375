@@ -1,0 +1,28 @@
+package com.neoxam.client;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class TestHibernate {
+
+	public static void main(String[] args) {
+		
+		// Démarrer la session factory hibernate
+		Configuration configuration = new Configuration().configure();
+		SessionFactory factory = configuration.buildSessionFactory();
+		
+		// Obtenir une session de la factory
+		Session session = factory.openSession();
+		
+		// Travailler sur les objets perisistants via la session
+		
+		// Libérer la session
+		session.close();
+		
+		// Libérer ka factory
+		factory.close();
+
+	}
+
+}

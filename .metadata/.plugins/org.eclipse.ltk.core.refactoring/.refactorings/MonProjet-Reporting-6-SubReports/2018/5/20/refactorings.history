@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MonProjet-Reporting-6-SubReports/reports/report-0-sampledb-params.jrxml&apos; to &apos;report-sampledb-subreport.jrxml&apos;" description="Rename resource &apos;report-0-sampledb-params.jrxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="reports/report-0-sampledb-params.jrxml" name="report-sampledb-subreport.jrxml" stamp="1526637971901" updateReferences="true"/>
+</session>

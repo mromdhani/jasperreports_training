@@ -1,0 +1,6 @@
+127.0.0.1 - - [18/May/2018:12:49:15 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [18/May/2018:12:49:17 +0100] "GET /MonProjet-Reporting-3-Web/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [18/May/2018:12:50:32 +0100] "GET /MonProjet-Reporting-3-Web/report HTTP/1.1" 200 1386
+127.0.0.1 - - [18/May/2018:12:51:39 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [18/May/2018:12:51:41 +0100] "GET /MonProjet-Reporting-3-Web/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [18/May/2018:12:51:59 +0100] "GET /MonProjet-Reporting-3-Web/report HTTP/1.1" 200 1386

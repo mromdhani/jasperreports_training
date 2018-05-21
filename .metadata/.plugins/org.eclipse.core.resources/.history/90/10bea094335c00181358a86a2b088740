@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mymyorders_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="090ac48f-ea69-4472-ab8c-df6fa6a87702">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="XML DataSource on Northwind.xml"/>
+	<parameter name="CustomerID" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[/Northwind/Orders]]>
+	</queryString>
+	<field name="CustomerID" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="CustomerID"/>
+		<fieldDescription><![CDATA[CustomerID]]></fieldDescription>
+	</field>
+	<field name="Freight" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Freight"/>
+		<fieldDescription><![CDATA[Freight]]></fieldDescription>
+	</field>
+	<field name="ShipCity" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="ShipCity"/>
+		<fieldDescription><![CDATA[ShipCity]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

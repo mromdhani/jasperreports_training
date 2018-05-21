@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="myCustomersReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bec04d4c-0639-4322-b9ac-4fd1de10926f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="XML DataSource on Northwind.xml"/>
+	<queryString language="xPath">
+		<![CDATA[/Northwind/Customers]]>
+	</queryString>
+	<field name="CustomerID" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="CustomerID"/>
+		<fieldDescription><![CDATA[CustomerID]]></fieldDescription>
+	</field>
+	<field name="CompanyName" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="CompanyName"/>
+		<fieldDescription><![CDATA[CompanyName]]></fieldDescription>
+	</field>
+	<field name="Country" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Country"/>
+		<fieldDescription><![CDATA[Country]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="6" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="30" uuid="e5834d43-0b06-467a-b9cd-9f0cd2e91825">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e307abf-f447-4227-b9e9-1046bcf02a5a"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CustomerID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="30" uuid="4d40906a-77b6-495f-ad38-e54d316fe833">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="782ceb2c-9ade-4888-9a3a-b048c05de4ff"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CompanyName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="30" uuid="0db63201-4d9c-46ba-8385-160a1b5f78c9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="362ddd6f-bcda-4bd6-b08a-136ca3791cbe"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Country]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="219" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="30" uuid="287efdf7-f879-4912-a960-9d55570b34ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e307abf-f447-4227-b9e9-1046bcf02a5a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{CustomerID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="30" uuid="5c127c3c-4810-4f01-98b8-62faf505754f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="782ceb2c-9ade-4888-9a3a-b048c05de4ff"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{CompanyName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="be2623d0-a0c6-41ee-8291-075117b7fa02">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="362ddd6f-bcda-4bd6-b08a-136ca3791cbe"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Country}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="30" y="20" width="525" height="110" uuid="2a5df6a3-090d-4e11-99d5-013e3fc43d6d"/>
+				<subreportParameter name="CustomerID">
+					<subreportParameterExpression><![CDATA[$F{CustomerID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["reports/myOrderReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="1" splitType="Stretch"/>
+	</summary>
+</jasperReport>

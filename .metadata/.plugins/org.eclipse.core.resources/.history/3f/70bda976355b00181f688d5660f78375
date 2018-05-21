@@ -1,0 +1,37 @@
+package com.neoxam.client;
+
+import java.io.BufferedInputStream;
+
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperRunManager;
+import net.sf.jasperreports.engine.data.JRXmlDataSource;
+
+public class Report_From_XML {
+	
+	public static void main(String[] args) {
+		
+		
+		try {
+			// Compilation du JRXML et Production du template
+		
+			
+			JRXmlDataSource xmlDataSource = new JRXmlDataSource("reports/AircraftData.xml");
+
+			
+			JasperRunManager.runReportToPdfFile(sourceFileName, destFileName, parameters, conn);()
+			
+
+			// Export du PDF
+			JasperExportManager.exportReportToPdfFile("reports/report-banque-hibernate.jrprint", 
+					 "reports/report-banque-hibernate.pdf");
+
+		} catch (JRException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Fin de la génération");
+	}
+}

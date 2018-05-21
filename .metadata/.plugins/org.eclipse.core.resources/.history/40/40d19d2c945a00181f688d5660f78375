@@ -1,0 +1,30 @@
+package com.neoxam.jdbc;
+
+import net.sf.jasperreports.engine.JREmptyDataSource;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+
+public class App {
+	public static void main(String[] args) {
+
+		try {
+			// Compilation du JRXML et Production du template
+//			JasperCompileManager.compileReportToFile("reports/report-0-hello.jrxml", "reports/report-0-hello.jasper");
+
+			// Remplissage du template et production du jrprint
+			JasperFillManager.fillReportToFile("reports/report-0-hello.jasper", "reports/report-0-hello.jrprint", 
+					null,
+					new JREmptyDataSource());
+
+			// Export du PDF
+			JasperExportManager.exportReportToPdfFile("reports/report-0-hello.jrprint", "reports/report-0-hello.pdf");
+
+		} catch (JRException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Fin de la génération");
+	}
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="myCustomersReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bec04d4c-0639-4322-b9ac-4fd1de10926f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="XML DataSource on Northwind.xml"/>
+	<queryString language="xPath">
+		<![CDATA[/Northwind/Customers]]>
+	</queryString>
+	<field name="CustomerID" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="CustomerID"/>
+		<fieldDescription><![CDATA[CustomerID]]></fieldDescription>
+	</field>
+	<field name="CompanyName" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="CompanyName"/>
+		<fieldDescription><![CDATA[CompanyName]]></fieldDescription>
+	</field>
+	<field name="Country" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Country"/>
+		<fieldDescription><![CDATA[Country]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="6" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="219" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="575" height="110" uuid="287efdf7-f879-4912-a960-9d55570b34ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e307abf-f447-4227-b9e9-1046bcf02a5a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{CustomerID}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="15" y="20" width="525" height="70" uuid="2a5df6a3-090d-4e11-99d5-013e3fc43d6d"/>
+				<subreportParameter name="CustomerID">
+					<subreportParameterExpression><![CDATA[$F{CustomerID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA["reports/myOrderReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

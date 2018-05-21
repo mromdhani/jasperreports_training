@@ -1,0 +1,52 @@
+package com.neoxam.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+
+public class Exemple1_JDBC_Connextion {
+	
+	public static void main(String[] args) {
+		
+		String url= "jdbc:mysql://localhost:3306/BanqueDB";
+		String userName="root";
+		String password ="password";
+		String driverClass= "com.mysql.jdbc.Driver";
+		Connection connection = null;
+		
+		try {
+			Class.forName(driverClass);
+			connection= DriverManager.getConnection(url, userName, password);
+			
+		} catch (ClassNotFoundException | SQLException e1) {
+			
+			e1.printStackTrace();
+		}
+		
+		
+
+		
+		try {
+			// Compilation du JRXML et Production du template
+//			JasperCompileManager.compileReportToFile("reports/report-0-hello.jrxml", "reports/report-0-hello.jasper");
+
+			// Remplissage du template et production du jrprint
+			JasperFillManager.fillReportToFile ("reports/report-banque-blue.jasper", "reports/report-banque-blue.jrprint", 
+					null,
+					connection);
+				//	new JREmptyDataSource());
+
+			// Export du PDF
+			JasperExportManager.exportReportToPdfFile("reports/report-banque-blue.jrprint", "reports/report-0-hello.pdf");
+
+		} catch (JRException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Fin de la génération");
+	}
+}

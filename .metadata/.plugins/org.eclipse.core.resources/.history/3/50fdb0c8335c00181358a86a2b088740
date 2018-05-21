@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mymyorders_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="090ac48f-ea69-4472-ab8c-df6fa6a87702">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="XML DataSource on Northwind.xml"/>
+	<parameter name="CustomerID" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[/Northwind/Orders]]>
+	</queryString>
+	<field name="CustomerID" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="CustomerID"/>
+		<fieldDescription><![CDATA[CustomerID]]></fieldDescription>
+	</field>
+	<field name="Freight" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Freight"/>
+		<fieldDescription><![CDATA[Freight]]></fieldDescription>
+	</field>
+	<field name="ShipCity" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="ShipCity"/>
+		<fieldDescription><![CDATA[ShipCity]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="30" uuid="1a5e4bc9-ba97-4e38-b8e1-50a23c2026e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1541f23c-3059-4059-afbd-2f8b21121964"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CustomerID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="30" uuid="2c6b57c7-f039-455c-a52d-207ba57eb3b6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e008c86-63ef-46b6-aa63-28c45a97c3fe"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Freight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="d32c466f-59e8-4126-be29-9d8b0079ea8c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ee1118c-b3d7-4771-9c9b-cc2482390640"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ShipCity}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

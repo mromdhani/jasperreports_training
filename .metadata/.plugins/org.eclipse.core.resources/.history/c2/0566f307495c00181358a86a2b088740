@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Northwind>
+  <Customers>
+    <CustomerID>ALFKI</CustomerID>
+    <CompanyName>Alfreds Futterkiste</CompanyName>
+    <ContactName>Maria Anders</ContactName>
+    <ContactTitle>Sales Representative</ContactTitle>
+    <Address>Obere Str. 57</Address>
+    <City>Berlin</City>
+    <PostalCode>12209</PostalCode>
+    <Country>Germany</Country>
+    <Phone>030-0074321</Phone>
+    <Fax>030-0076545</Fax>
+  </Customers>
+  <Customers>
+    <CustomerID>CHOPS</CustomerID>
+    <CompanyName>Ana Trujillo Emparedados y helados</CompanyName>
+    <ContactName>Ana Trujillo</ContactName>
+    <ContactTitle>Owner</ContactTitle>
+    <Address>Avda. de la Constitución 2222</Address>
+    <City>México D.F.</City>
+    <PostalCode>05021</PostalCode>
+    <Country>Mexico</Country>
+    <Phone>(5) 555-4729</Phone>
+    <Fax>(5) 555-3745</Fax>
+  </Customers>
+  <Customers>
+    <CustomerID>ANTON</CustomerID>
+    <CompanyName>Antonio Moreno Taquería</CompanyName>
+    <ContactName>Antonio Moreno</ContactName>
+    <ContactTitle>Owner</ContactTitle>
+    <Address>Mataderos  2312</Address>
+    <City>México D.F.</City>
+    <PostalCode>05023</PostalCode>
+    <Country>Mexico</Country>
+    <Phone>(5) 555-3932</Phone>
+  </Customers>
+ 
+ 
+ 
+  <Orders>
+    <OrderID>10254</OrderID>
+    <CustomerID>CHOPS</CustomerID>
+    <EmployeeID>5</EmployeeID>
+    <OrderDate>1996-07-11</OrderDate>
+    <RequiredDate>1996-08-08</RequiredDate>
+    <ShippedDate>1996-07-23</ShippedDate>
+    <ShipVia>2</ShipVia>
+    <Freight>22.98</Freight>
+    <ShipName>Chop-suey Chinese</ShipName>
+    <ShipAddress>Hauptstr. 31</ShipAddress>
+    <ShipCity>Bern</ShipCity>
+    <ShipPostalCode>3012</ShipPostalCode>
+    <ShipCountry>Switzerland</ShipCountry>
+  </Orders>
+  <Orders>
+    <OrderID>10255</OrderID>
+    <CustomerID>CHOPS</CustomerID>
+    <EmployeeID>9</EmployeeID>
+    <OrderDate>1996-07-12</OrderDate>
+    <RequiredDate>1996-08-09</RequiredDate>
+    <ShippedDate>1996-07-15</ShippedDate>
+    <ShipVia>3</ShipVia>
+    <Freight>148.33</Freight>
+    <ShipName>Richter Supermarkt</ShipName>
+    <ShipAddress>Starenweg 5</ShipAddress>
+    <ShipCity>Genève</ShipCity>
+    <ShipPostalCode>1204</ShipPostalCode>
+    <ShipCountry>Switzerland</ShipCountry>
+  </Orders>
+  <Orders>
+    <OrderID>10256</OrderID>
+    <CustomerID>ALFKI</CustomerID>
+    <EmployeeID>3</EmployeeID>
+    <OrderDate>1996-07-15</OrderDate>
+    <RequiredDate>1996-08-12</RequiredDate>
+    <ShippedDate>1996-07-17</ShippedDate>
+    <ShipVia>2</ShipVia>
+    <Freight>13.97</Freight>
+    <ShipName>Wellington Importadora</ShipName>
+    <ShipAddress>Rua do Mercado, 12</ShipAddress>
+    <ShipCity>Resende</ShipCity>
+    <ShipRegion>SP</ShipRegion>
+    <ShipPostalCode>08737-363</ShipPostalCode>
+    <ShipCountry>Brazil</ShipCountry>
+  </Orders>
+  <Orders>
+    <OrderID>10257</OrderID>
+    <CustomerID>ALFKI</CustomerID>
+    <EmployeeID>4</EmployeeID>
+    <OrderDate>1996-07-16</OrderDate>
+    <RequiredDate>1996-08-13</RequiredDate>
+    <ShippedDate>1996-07-22</ShippedDate>
+    <ShipVia>3</ShipVia>
+    <Freight>81.91</Freight>
+    <ShipName>HILARION-Abastos</ShipName>
+    <ShipAddress>Carrera 22 con Ave. Carlos Soublette #8-35</ShipAddress>
+    <ShipCity>San Cristóbal</ShipCity>
+    <ShipRegion>Táchira</ShipRegion>
+    <ShipPostalCode>5022</ShipPostalCode>
+    <ShipCountry>Venezuela</ShipCountry>
+  </Orders>
+  <Orders>
+    <OrderID>10258</OrderID>
+    <CustomerID>ALFKI</CustomerID>
+    <EmployeeID>1</EmployeeID>
+    <OrderDate>1996-07-17</OrderDate>
+    <RequiredDate>1996-08-14</RequiredDate>
+    <ShippedDate>1996-07-23</ShippedDate>
+    <ShipVia>1</ShipVia>
+    <Freight>140.51</Freight>
+    <ShipName>Ernst Handel</ShipName>
+    <ShipAddress>Kirchgasse 6</ShipAddress>
+    <ShipCity>Graz</ShipCity>
+    <ShipPostalCode>8010</ShipPostalCode>
+    <ShipCountry>Austria</ShipCountry>
+  </Orders>
+ 
+</Northwind>
